@@ -140,10 +140,7 @@
           "builder": "@angular-devkit/build-ng-packagr:build",
           "options": {
             "tsConfig": "projects/calendar/tsconfig.lib.json",
-            "project": "projects/calendar/ng-package.json",
-            "styles": [
-              "styles/styles.scss"
-            ]
+            "project": "projects/calendar/ng-package.json"
           }
         },
         "test": {

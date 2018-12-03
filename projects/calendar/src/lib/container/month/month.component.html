@@ -1,7 +1,8 @@
 <div class="calendar">
-  <lib-render-header (changeCurrentMonth)="changeCurrentMonth($event)" [changeMonth]="changeMonth" [month]="month"></lib-render-header>
+  <lib-render-header [lang]="lang" (changeCurrentMonth)="changeCurrentMonth($event)" [changeMonth]="changeMonth"
+    [month]="month"></lib-render-header>
   <div class="body">
-    <lib-render-days class="days row" [month]="month" [dayFormat]="dayFormat" [weekStartsOn]="weekStartsOn">
+    <lib-render-days class="days row" [lang]="lang" [month]="month" [dayFormat]="dayFormat" [weekStartsOn]="weekStartsOn">
     </lib-render-days>
     <lib-render-cells [month]="month" [weekStartsOn]="weekStartsOn"></lib-render-cells>
   </div>

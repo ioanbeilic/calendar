@@ -10,4 +10,6 @@ export class AppComponent {
   year = 2018;
   changeMonth = false;
   month = new Date();
+  weekStartsOn = 1;
+  language = 'es';
 }

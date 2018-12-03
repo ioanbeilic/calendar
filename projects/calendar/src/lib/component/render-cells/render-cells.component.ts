@@ -24,6 +24,7 @@ import {
 export class RenderCellsComponent implements OnInit, OnChanges {
   @Input() month;
   @Input() weekStartsOn;
+
   rows: any = [];
 
   constructor() {}

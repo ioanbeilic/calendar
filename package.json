@@ -7,7 +7,9 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "build-calendar": "ng build --prod calendar",
+    "npm-pack-calendar": "cd dist/calendar && npm pack"
   },
   "private": true,
   "dependencies": {
@@ -20,6 +22,7 @@
     "@angular/platform-browser-dynamic": "~7.1.0",
     "@angular/router": "~7.1.0",
     "@types/date-fns": "^2.6.0",
+    "calendar": "http://192.168.64.2/calendar-0.0.1.tgz",
     "core-js": "^2.5.4",
     "date-fns": "^1.29.0",
     "rxjs": "~6.3.3",

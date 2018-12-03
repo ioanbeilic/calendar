@@ -8,6 +8,7 @@ import { format, addMonths, subMonths } from 'date-fns';
 export class RenderHeaderComponent implements OnInit {
   @Input() month;
   @Input() changeMonth: boolean;
+  @Input() lang: any;
   dateFormat = 'MMMM';
   @Output() changeCurrentMonth = new EventEmitter<Date>();
   currentMonth: string;
@@ -15,7 +16,7 @@ export class RenderHeaderComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {
-    this.currentMonth = format(this.month, this.dateFormat);
+    this.currentMonth = format(this.month, this.dateFormat, this.lang);
   }
 
   nextMonth() {
