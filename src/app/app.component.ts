@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'library';
+  year = 2018;
+  changeMonth = false;
+  month = new Date();
 }

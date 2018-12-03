@@ -1,0 +1,6 @@
+<div *ngFor="let days of rows" class="row">
+  <div *ngFor="let day of days" [id]="day[3]" class="col cell">
+    <span class="number">{{day[0]}}</span>
+    <span class="bg">{{day[0]}}</span>
+  </div>
+</div>

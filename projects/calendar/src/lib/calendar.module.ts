@@ -1,11 +1,21 @@
 import { NgModule } from '@angular/core';
-import { CalendarComponent } from './calendar.component';
-import { MonthComponent } from './month/month.component';
+
+import { CommonModule } from '@angular/common';
+import { MonthComponent } from './container/month/month.component';
+import { RenderHeaderComponent } from './component/render-header/render-header.component';
+import { RenderDaysComponent } from './component/render-days/render-days.component';
+import { RenderCellsComponent } from './component/render-cells/render-cells.component';
+import { YearComponent } from './container/year/year.component';
 
 @NgModule({
-  declarations: [CalendarComponent, MonthComponent],
-  imports: [
+  declarations: [
+    MonthComponent,
+    RenderHeaderComponent,
+    RenderDaysComponent,
+    RenderCellsComponent,
+    YearComponent
   ],
-  exports: [CalendarComponent]
+  imports: [CommonModule],
+  exports: [YearComponent, MonthComponent]
 })
-export class CalendarModule { }
+export class CalendarModule {}

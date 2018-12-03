@@ -1,0 +1,13 @@
+<div class="header row flex-middle">
+  <div class="col col-start">
+    <div *ngIf="changeMonth" class="icon" (click)="prevMonth()">
+      chevron_left
+    </div>
+  </div>
+  <div class="col col-center">
+    <span>{{ currentMonth }}</span>
+  </div>
+  <div class="col col-end">
+    <div *ngIf="changeMonth" (click)="nextMonth()" class="icon">chevron_right</div>
+  </div>
+</div>
