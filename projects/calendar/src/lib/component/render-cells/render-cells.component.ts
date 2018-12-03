@@ -13,7 +13,8 @@ import {
   endOfWeek,
   format,
   isSameMonth,
-  addDays
+  addDays,
+  isSameDay
 } from 'date-fns';
 
 @Component({
@@ -30,9 +31,17 @@ export class RenderCellsComponent implements OnInit, OnChanges {
   ngOnInit() {}
 
   ngOnChanges(changes: SimpleChanges) {
-    const newMonth: SimpleChange = changes.month;
+    // const newMonth: SimpleChange = changes.month;
     this.rows = [];
     this.getMonth(this.month);
+  }
+
+  sameMonth(day) {
+    return isSameMonth(day, this.month);
+  }
+  sameDay(day) {
+    const today = Date.now();
+    return isSameDay(day, today);
   }
 
   getMonth(currentMonth) {

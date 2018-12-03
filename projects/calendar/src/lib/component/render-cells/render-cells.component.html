@@ -1,5 +1,6 @@
 <div *ngFor="let days of rows" class="row">
-  <div *ngFor="let day of days" [id]="day[3]" class="col cell">
+  <div *ngFor="let day of days" [attr.id]="day[2]" class="col cell" [class.disabled]="!sameMonth(day[1])"
+    [class.selected]="sameDay(day[1])">
     <span class="number">{{day[0]}}</span>
     <span class="bg">{{day[0]}}</span>
   </div>
