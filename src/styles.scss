@@ -124,7 +124,7 @@ main {
   border: 1px solid var(--border-color);
 }
 
-.calendar .header {
+.header {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 115%;
@@ -132,22 +132,22 @@ main {
   border-bottom: 1px solid var(--border-color);
 }
 
-.calendar .header .icon {
+.header .icon {
   cursor: pointer;
   transition: .15s ease-out;
 }
 
-.calendar .header .icon:hover {
+.header .icon:hover {
   transform: scale(1.75);
   transition: .25s ease-out;
   color: var(--main-color);
 }
 
-.calendar .header .icon:first-of-type {
+.header .icon:first-of-type {
   margin-left: 1em;
 }
 
-.calendar .header .icon:last-of-type {
+.header .icon:last-of-type {
   margin-right: 1em;
 }
 

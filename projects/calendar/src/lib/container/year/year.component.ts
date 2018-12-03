@@ -18,6 +18,12 @@ export class YearComponent implements OnInit {
     this.getYer(this.year);
   }
 
+  changeYear(year) {
+    this.year = year;
+    this.months = [];
+    this.getYer(year);
+  }
+
   getYer(year) {
     for (let i = 0; i < 12; i++) {
       this.months.push(new Date(Number(year), i));

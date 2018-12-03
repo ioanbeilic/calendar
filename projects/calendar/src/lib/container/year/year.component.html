@@ -1,5 +1,22 @@
 <div class="year">
 
+  <div class="header row flex-middle">
+    <div class="col col-start">
+      <div class="icon" (click)="changeYear(year - 1)">
+        chevron_left
+      </div>
+    </div>
+    <div class="col col-center">
+      <span>{{ year }}</span>
+    </div>
+    <div class="col col-end">
+      <div (click)="changeYear(year + 1)" class="icon">
+        chevron_right
+      </div>
+    </div>
+  </div>
+
+
   <div *ngFor="let month of months" class="calendar year-calendar">
     <lib-render-header [changeMonth]="changeMonth" [month]="month"></lib-render-header>
     <div class="body">
