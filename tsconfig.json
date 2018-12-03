@@ -17,6 +17,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "calendar": [
+        "dist/calendar"
+      ],
+      "calendar/*": [
+        "dist/calendar/*"
+      ]
+    }
   }
 }
