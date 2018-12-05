@@ -3,9 +3,9 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { CalendarModule } from 'calendar';
+// import { CalendarModule } from 'calendar';
 
-// import { CalendarModule } from 'projects/calendar/src/public_api';
+import { CalendarModule } from 'projects/calendar/src/public_api';
 
 @NgModule({
   declarations: [AppComponent],

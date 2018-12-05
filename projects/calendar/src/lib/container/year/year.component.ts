@@ -52,42 +52,6 @@ import * as fr from 'date-fns/locale/fr';
         box-sizing: border-box;
       }
 
-      ::ng-deep body {
-        font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial',
-          sans-serif;
-        font-size: 1em;
-        font-weight: 300;
-        line-height: 1.5;
-        color: var(--text-color);
-        background: var(--bg-color);
-        position: relative;
-      }
-
-      ::ng-deep header {
-        display: block;
-        width: 100%;
-        padding: 1.75em 0;
-        border-bottom: 1px solid var(--border-color);
-        background: var(--neutral-color);
-      }
-
-      ::ng-deep header #logo {
-        font-size: 175%;
-        text-align: center;
-        color: var(--main-color);
-        line-height: 1;
-      }
-
-      ::ng-deep header #logo .icon {
-        padding-right: 0.25em;
-      }
-
-      ::ng-deep main {
-        display: block;
-        margin: 0 auto;
-        margin-top: 5em;
-        max-width: 50em;
-      }
 
       /* GRID */
 
