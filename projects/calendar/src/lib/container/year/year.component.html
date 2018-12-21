@@ -3,27 +3,24 @@
   <div class="header row flex-middle">
     <div class="col col-start">
       <div class="icon" (click)="changeYear(year - 1)">
-        chevron_left
+        < </div> </div> <div class="col col-center">
+          <span>{{ year }}</span>
+      </div>
+      <div class="col col-end">
+        <div (click)="changeYear(year + 1)" class="icon">
+          >
+        </div>
       </div>
     </div>
-    <div class="col col-center">
-      <span>{{ year }}</span>
-    </div>
-    <div class="col col-end">
-      <div (click)="changeYear(year + 1)" class="icon">
-        chevron_right
+
+
+    <div *ngFor="let month of months" class="calendar year-calendar">
+      <lib-render-header [lang]="lang" [changeMonth]="changeMonth" [month]="month"></lib-render-header>
+      <div class="body">
+        <lib-render-days [lang]="lang" class="days row" [month]="month" [dayFormat]="dayFormat" [weekStartsOn]="weekStartsOn">
+        </lib-render-days>
+        <lib-render-cells [month]="month" [weekStartsOn]="weekStartsOn"></lib-render-cells>
       </div>
     </div>
+
   </div>
-
-
-  <div *ngFor="let month of months" class="calendar year-calendar">
-    <lib-render-header [lang]="lang" [changeMonth]="changeMonth" [month]="month"></lib-render-header>
-    <div class="body">
-      <lib-render-days [lang]="lang" class="days row" [month]="month" [dayFormat]="dayFormat" [weekStartsOn]="weekStartsOn">
-      </lib-render-days>
-      <lib-render-cells [month]="month" [weekStartsOn]="weekStartsOn"></lib-render-cells>
-    </div>
-  </div>
-
-</div>

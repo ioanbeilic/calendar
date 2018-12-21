@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { startOfWeek, format, addDays, startOfMonth } from 'date-fns';
+import { startOfWeek, format, addDays } from 'date-fns';
 
 @Component({
   selector: 'lib-render-days',

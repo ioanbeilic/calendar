@@ -3,8 +3,7 @@ import {
   OnInit,
   Input,
   SimpleChanges,
-  OnChanges,
-  SimpleChange
+  OnChanges
 } from '@angular/core';
 import {
   startOfMonth,
